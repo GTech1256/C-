@@ -31,19 +31,19 @@
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.обьектToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.справочникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сотрудникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.клиентToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.договорToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.поручениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сделкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.справочникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.долностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.странаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.регионToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.городToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.иМНСToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.справкаToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(494, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(522, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,26 +82,6 @@
             this.обьектToolStripMenuItem.Name = "обьектToolStripMenuItem";
             this.обьектToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
             this.обьектToolStripMenuItem.Text = "Обьект";
-            // 
-            // справочникToolStripMenuItem
-            // 
-            this.справочникToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.долностьToolStripMenuItem,
-            this.странаToolStripMenuItem,
-            this.регионToolStripMenuItem,
-            this.городToolStripMenuItem,
-            this.иМНСToolStripMenuItem});
-            this.справочникToolStripMenuItem.Name = "справочникToolStripMenuItem";
-            this.справочникToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.справочникToolStripMenuItem.Text = "Справочник";
-            // 
-            // справкаToolStripMenuItem
-            // 
-            this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.оПрограммеToolStripMenuItem});
-            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.справкаToolStripMenuItem.Text = "Справка";
             // 
             // сотрудникToolStripMenuItem
             // 
@@ -139,6 +119,19 @@
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
+            // 
+            // справочникToolStripMenuItem
+            // 
+            this.справочникToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.долностьToolStripMenuItem,
+            this.странаToolStripMenuItem,
+            this.регионToolStripMenuItem,
+            this.городToolStripMenuItem,
+            this.иМНСToolStripMenuItem});
+            this.справочникToolStripMenuItem.Name = "справочникToolStripMenuItem";
+            this.справочникToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.справочникToolStripMenuItem.Text = "Справочник";
             // 
             // долностьToolStripMenuItem
             // 
@@ -170,6 +163,14 @@
             this.иМНСToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.иМНСToolStripMenuItem.Text = "ИМНС";
             // 
+            // справкаToolStripMenuItem
+            // 
+            this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.оПрограммеToolStripMenuItem});
+            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.справкаToolStripMenuItem.Text = "Справка";
+            // 
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
@@ -180,12 +181,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(494, 297);
+            this.ClientSize = new System.Drawing.Size(522, 314);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

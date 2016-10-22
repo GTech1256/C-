@@ -24,7 +24,14 @@ namespace Lab2
 
         private void сотрудникToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("HeLLO!!");
+            Form2 form = new Form2();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
