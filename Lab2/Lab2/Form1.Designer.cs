@@ -108,6 +108,7 @@
             this.сотрудникToolStripMenuItem.Name = "сотрудникToolStripMenuItem";
             this.сотрудникToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.сотрудникToolStripMenuItem.Text = "Сотрудник";
+            this.сотрудникToolStripMenuItem.Click += new System.EventHandler(this.сотрудникToolStripMenuItem_Click);
             // 
             // клиентToolStripMenuItem
             // 

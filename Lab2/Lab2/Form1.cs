@@ -21,5 +21,10 @@ namespace Lab2
         {
             MessageBox.Show("HelloGit");
         }
+
+        private void сотрудникToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("HeLLO!!");
+        }
     }
 }
