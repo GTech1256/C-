@@ -33,5 +33,12 @@ namespace Lab2
         {
             Application.Exit();
         }
+
+        private void линейнаяЗадачаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aBox = new AboutBox1();
+            aBox.MdiParent = this;
+            aBox.Show();
+        }
     }
 }

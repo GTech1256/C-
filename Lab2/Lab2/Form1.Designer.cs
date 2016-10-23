@@ -45,6 +45,8 @@
             this.иМНСToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.решениеЗадачToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.линейнаяЗадачаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +65,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.обьектToolStripMenuItem,
             this.справочникToolStripMenuItem,
-            this.справкаToolStripMenuItem});
+            this.справкаToolStripMenuItem,
+            this.решениеЗадачToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(522, 24);
@@ -174,8 +177,23 @@
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.оПрограммеToolStripMenuItem.Text = "О Программе";
+            // 
+            // решениеЗадачToolStripMenuItem
+            // 
+            this.решениеЗадачToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.линейнаяЗадачаToolStripMenuItem});
+            this.решениеЗадачToolStripMenuItem.Name = "решениеЗадачToolStripMenuItem";
+            this.решениеЗадачToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.решениеЗадачToolStripMenuItem.Text = "Решение задач";
+            // 
+            // линейнаяЗадачаToolStripMenuItem
+            // 
+            this.линейнаяЗадачаToolStripMenuItem.Name = "линейнаяЗадачаToolStripMenuItem";
+            this.линейнаяЗадачаToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.линейнаяЗадачаToolStripMenuItem.Text = "Линейная задача";
+            this.линейнаяЗадачаToolStripMenuItem.Click += new System.EventHandler(this.линейнаяЗадачаToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -215,6 +233,8 @@
         private System.Windows.Forms.ToolStripMenuItem иМНСToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem решениеЗадачToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem линейнаяЗадачаToolStripMenuItem;
     }
 }
 
