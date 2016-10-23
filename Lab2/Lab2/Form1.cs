@@ -12,6 +12,7 @@ namespace Lab2
 {
     public partial class Form1 : Form
     {
+        Form2 form = new Form2();
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +25,6 @@ namespace Lab2
 
         private void сотрудникToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
             form.MdiParent = this;
             form.Show();
         }
@@ -39,6 +39,56 @@ namespace Lab2
             AboutBox1 aBox = new AboutBox1();
             aBox.MdiParent = this;
             aBox.Show();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void отменитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void создатьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void редактироватьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
+        }
+
+        private void удалитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form.Zagluska(sender);
         }
     }
 }
