@@ -68,7 +68,7 @@ namespace Lab2
         }
 
         void Save()
-        {
+        { 
             DialogResult = MessageBox.Show("Во время сохранения произошла ошибка", "Сохранить", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error, MessageBoxDefaultButton.Button3);
             switch (DialogResult)
             {
